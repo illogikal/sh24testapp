@@ -1,0 +1,9 @@
+div           { font-family: sans-serif; font-size: 12px }
+a             { color: #777c8c; text-decoration: none; }
+.container    { width: 512px; height: 47px; padding: 10px; position: relative; background-color: #fafafa; border-top: 1px solid #f1f1f1; border-bottom: 1px solid #f1f1f1;}
+.top-line     { display: inline-block; width: calc(100% - 83px); position: absolute; top: 7.8px; right: 15px; }
+.logo         { width: 48px; height: 48px; padding: 0 0 10px 0; display: inline-block; }
+.title        { font-weight: bold; display: inline-block; float: left; }
+.description  { display: inline-block; width: calc(100% - 78px); position: absolute; top: 23px; right: 11px; font-size: 13px; }
+.timeago      { font-size: 11px; color: #c2c2c2; display: inline-block; float: right; margin-top: 2px; }
+.template-img { opacity: 0.5; margin-top: -79px;}

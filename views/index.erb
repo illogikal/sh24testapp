@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SH 24 test app</title>
+    <% if logged_in?  %>
+      <script type="text/javascript" src='./search.js'></script>
+    <% end %>
+  </head>
+  <body>
+    <% if logged_in?  %>
+      <form id='search' action="/search">
+        <label>Search for github user name:</label>
+        <input name="name">
+        <button>Submit</button>
+      </form>
+      <form action="/logout", method='post'>
+        <label>Logged in as <%= gh_client.login %></label>
+        <button>Log out</button>
+      </form>
+      <div id="result"></div>
+    <% else %>
+      <form action="/login", method='post'>
+        <label>Login:</label>
+        <input name="login" placeholder="Login">
+        <input name="password" type="password" placeholder="Password">
+        <button>Submit</button>
+      </form>
+    <% end %>
+  </body>
+</html>
